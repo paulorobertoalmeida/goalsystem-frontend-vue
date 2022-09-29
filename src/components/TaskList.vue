@@ -7,7 +7,7 @@
         @change="{() => toggleAll()}"
         checked="{allItemsCompleted()}"
       />
-      <label htmlFor="toggle-all" />
+      <label htmlFor="toggle-all"></label>
     <ul class="todo-list">
       <TaskItem v-for="item in items" :key="item" v-bind="item" />
     </ul>
@@ -39,6 +39,7 @@ const List = ({ list, setList, filter }: ListProps) => {
       return true;
     });
   };
+}
 </script>
 
 <style>

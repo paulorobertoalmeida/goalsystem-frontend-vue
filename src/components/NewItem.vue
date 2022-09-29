@@ -8,11 +8,11 @@
 </template>
 
 <script setup lang="ts">
-import { useTaskStore } from "../store/task";
+// import { useTaskStore } from "../store/task";
 import { defineComponent, ref } from "vue";
 
 const text = ref("");
-const store = useStore();
+// const store = useStore();
 const createTask = () => {
   
 }

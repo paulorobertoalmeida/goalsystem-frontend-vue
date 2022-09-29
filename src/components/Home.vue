@@ -3,7 +3,9 @@
     <div class="todoapp">
       <h1>Paulo todos</h1>
       <NewItem />
-      <Footer />
+      <div v-show="showFooter" class="footer">
+        <Footer />
+      </div>
     </div>
     <router-view />
   </div>
@@ -12,6 +14,11 @@
 <script setup lang="ts">
 import NewItem from "../components/NewItem.vue"
 import Footer from "../components/Footer.vue"
+
+
+const showFooter: boolean = false;
+
+
 </script>
 
 <style>
