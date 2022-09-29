@@ -1,9 +1,9 @@
 <template>
   <div >
     <div class="todoapp">
-      <h1>Paulo todos</h1>
+      <h1>Paulo's todo</h1>
       <NewItem />
-      <div v-show="showFooter" class="footer">
+      <div v-show="showFooter" @toggleShowFooter ="showFooter" class="footer">
         <Footer />
       </div>
     </div>
@@ -18,6 +18,10 @@ import Footer from "../components/Footer.vue"
 
 const showFooter: boolean = false;
 
+const toggleShowFooter = () => {
+  console.log(showFooter);
+   showFooter = !showFooter
+}
 
 </script>
 
